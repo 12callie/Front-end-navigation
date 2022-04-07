@@ -154,4 +154,4 @@ $(document).on('keypress', function (e) {
     }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=https://github.com/12callie/Front-end-navigation/dist/main.47a20c96.map
+//# sourceMappingURL=main.47a20c96.map
