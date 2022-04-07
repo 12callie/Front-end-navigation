@@ -1,0 +1,151 @@
+/* header */
+.globalHeader{
+    margin: 20px;
+}
+@media (min-width: 500px){
+    .globalHeader{
+        margin: 60px 0 100px 0;
+    }
+}
+.searchForm{
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width: 500px){
+    .searchForm{
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.searchForm > input{
+    width: 100%;
+    margin-right: 16px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.searchForm > button{
+    white-space: nowrap;
+    padding: 0 24px;
+    border: none;
+    background: #0282B9;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+/* end */
+
+
+/* main */
+.globalMain{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.globalMain-siteList{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+@media (min-width: 500px){
+    .globalMain-siteList{
+        justify-content: flex-start;
+        margin-left: 0;
+        margin-right: -50px;
+    }
+    .globalMain-siteList > li{
+        margin-right: 50px;
+    }
+}
+.globalMain-siteList > li{
+    margin-bottom: 16px;
+}
+
+.globalMain-siteList-site{
+    display: flex;
+    width: 160px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer; /* 悬浮于连接上时，通常为手 */
+}
+.globalMain-siteList-site > .logo{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+.globalMain-siteList-site > .link{
+    font-size: 14px;
+    margin-top: 4px;
+}
+.globalMain-siteList-site > .close{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: default; /* 默认指针，通常是箭头 */
+}
+@media (min-width: 500px){
+    .globalMain-siteList-site > .close{
+        display: none;
+    }
+    .globalMain-siteList-site:hover > .close{
+        display: block;
+    }
+}
+
+.globalMain-siteList-addButton{
+    display: flex;
+    width: 160px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px 0;
+
+}
+.globalMain-siteList-addButton .iconWrapper{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconWrapper .icon{
+    width: 64px;
+    height: 64px;
+}
+.globalMain-siteList-addButton .addButton-text {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+
+/* end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
