@@ -54,7 +54,6 @@ onbeforeunload = ()=>{
     const string = JSON.stringify(hashMap)
     localStorage.setItem('x', string)   
 }
-
 $(document).on('keypress', (e)=>{
     const {key} = e //相当于 const key = e.key
     for(let i=0;i<hashMap.length;i++){
@@ -63,7 +62,9 @@ $(document).on('keypress', (e)=>{
         }
     }
 })
-
+$('input').on('keypress', (e)=>{
+    e.stopPropagation()
+})
 
 
 

@@ -143,7 +143,6 @@ onbeforeunload = function onbeforeunload() {
     var string = JSON.stringify(hashMap);
     localStorage.setItem('x', string);
 };
-
 $(document).on('keypress', function (e) {
     var key = e.key; //相当于 const key = e.key
 
@@ -153,5 +152,8 @@ $(document).on('keypress', function (e) {
         }
     }
 });
+$('input').on('keypress', function (e) {
+    e.stopPropagation();
+});
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.47a20c96.map
+//# sourceMappingURL=main.702147ee.map
